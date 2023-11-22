@@ -23,7 +23,7 @@ export default async function Home() {
         maxWidth="lg"
         sx={{ width: "100%" }}
       >
-        <Typography sx={{ fontFamily: "serif" }} variant="h3">
+        <Typography sx={{ fontFamily: "serif",}} variant="h3">
           Popular movies
         </Typography>
         <Grid2
