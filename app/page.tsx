@@ -9,7 +9,12 @@ export default async function Home() {
 
   return (
     <main
-      style={{ display: "flex", flexDirection: "column", alignItems: "center", backgroundColor:"",}}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        backgroundColor: "",
+      }}
     >
       <Stack
         direction="column"
@@ -18,7 +23,9 @@ export default async function Home() {
         maxWidth="lg"
         sx={{ width: "100%" }}
       >
-        <Typography sx={{fontFamily:"console"}}variant="h3">Popular movies</Typography>
+        <Typography sx={{ fontFamily: "serif" }} variant="h3">
+          Popular movies
+        </Typography>
         <Grid2
           container
           spacing={4}
@@ -37,6 +44,7 @@ export default async function Home() {
                       boxShadow: "0px 0px 10px 10px rgba(0,0,0,0.15)",
                     },
                     cursor: "pointer",
+                    backgroundColor: "transparent",
                   }}
                 >
                   <Image
@@ -45,7 +53,9 @@ export default async function Home() {
                     alt="aa"
                     src={`https://image.tmdb.org/t/p/w500/${i.poster_path}`}
                   />
-                  <CardContent  sx={{display: "flex" , justifyContent:"center"}}>
+                  <CardContent
+                    sx={{ display: "flex", justifyContent: "center" }}
+                  >
                     <Typography
                       variant="h6"
                       component="div"
@@ -53,6 +63,7 @@ export default async function Home() {
                         whiteSpace: "nowrap",
                         overflow: "hidden",
                         textOverflow: "ellipsis",
+                        fontFamily: "serif",
                       }}
                     >
                       {i.title}

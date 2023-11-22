@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{backgroundColor:"rgb(224 231 255)"}}>
         <ThemeRegistry>{children}</ThemeRegistry>
       </body>
     </html>
